@@ -13,6 +13,7 @@ import { SelfAnalysisComponent } from './common-services/self-analysis/self-anal
 import { ResourcesComponent } from './common-services/resources/resources.component';
 import { OurProductsComponent } from './common-services/our-products/our-products.component';
 import { ChatComponent } from './chat/chat/chat.component';
+import { SelectBeneficiaryComponent } from './Patients/select-beneficiary/select-beneficiary.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'self-analysis', component: SelfAnalysisComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'our-products', component: OurProductsComponent },
-  { path: 'chat', component: ChatComponent }
+  { path: 'chat', component: ChatComponent },
+  { path: 'select-beneficiary/:id', component : SelectBeneficiaryComponent}
 ];
 
 @NgModule({
